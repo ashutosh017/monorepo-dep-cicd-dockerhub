@@ -1,5 +1,5 @@
 {
-  "name": "my-turborepo",
+  "name": "deploying-monorepo-cicd-dockerhub",
   "private": true,
   "scripts": {
     "build": "turbo run build",
