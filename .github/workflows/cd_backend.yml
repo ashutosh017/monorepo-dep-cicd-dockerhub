@@ -1,7 +1,9 @@
 name: Continous deployment (prod) (backend)
+
 on:
   push:
     branches: [main]
+    
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,7 +16,7 @@ jobs:
         with:
           username: ${{secrets.DOCKERHUB.USERNAME}}
           password: ${{secrets.DOCKERHUB.PASSWORD}}
-          
+
       - name: build and push
         uses: docker/build-push-action@v4
         with:
